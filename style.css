@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cursor: url(img/cusour.png), auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #22559e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    background: linear-gradient(100deg, #153777, #2765b2);
+    box-shadow: 0 30px 25px -1px rgb(0,0,0,.6);
+    padding: 0 30px;
+}
+
+header nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 3px 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(238,238,238,.85);
+    transition: .3s linear;
+    cursor: var(--cursor);
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+header nav .buy_nav_btn {
+    text-decoration: none;
+    color: rgb(238,238,238,.95);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border: 2px solid rgb(238,238,238,.95);
+    border-radius: 20px;
+    cursor: var(--cursor);
+    transition: .3s linear;
+}
+
+header nav .buy_nav_btn:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+header section {
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+
+header section .left_bx , .right_bx {
+    position: relative;
+    width: 60%;
+    height: 100%;
+}
+
+header section .right_bx {
+    width: 40%;
+}
+header section .left_bx #left_btn {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    color: #fff;
+    font-size: 11px;
+    cursor: var(--cursor);
+    transition: .3s linear;
+}
+
+header section .left_bx #left_btn:hover {
+    color: #2d71c0;
+}
+
+header section .left_bx {
+    padding: 40px 0 0 70px;
+}
+
+header section .left_bx .content {
+    color: #fff;
+}
+
+header section .left_bx .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header section .left_bx .content p:nth-child(2) {
+    font-size: 11px;
+    color: rgb(255,255,255,.43);
+}
+
+header section .left_bx .content h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+header section .left_bx .content .nutritation_bx {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header section .left_bx .content .nutritation_bx .card {
+    position: relative;
+    width: 110px;
+    height: 100px;
+    background: rgb(45,113,192,.5);
+    margin-right: 5px;
+}
+
+header section .left_bx .content .nutritation_bx .card:nth-child(1) {
+    background: rgb(45,113,192);
+}
+
+header section .left_bx .content .nutritation_bx .card p {
+    font-size: 11px;
+    text-align: center;
+    color: rgb(255,255,255,.7);
+    font-weight: 600;
+    margin-top: 13px;
+}
+
+header section .left_bx .content .nutritation_bx .card:nth-child(1) p {
+    margin-top: 5px;
+}
+
+header section .left_bx .content .nutritation_bx .card h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2px;
+}
+
+header section .left_bx .content .nutritation_bx .card h6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: rgb(56,126,206,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+header section .left_bx .content .nutritation_bx .card:nth-child(1) h6 {
+    background: rgb(56,126,206);
+}
+
+header section .left_bx .content p:nth-child(5) {
+    font-size: 11px;
+    color: rgb(255,255,255,.5);
+    margin-top: 10px;
+}
+
+header section .left_bx .content button {
+    margin-top: 30px;
+    padding: 3px 40px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    transition: .3s linear;
+    cursor: var(--cursor);
+}
+
+header section .left_bx .content button:hover {
+    background: #2d71c0;
+}
+
+header section .left_bx .item_bx {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header section .left_bx .item_bx .card_pepsi {
+    width: 50px;
+    margin-right: 20px;
+    overflow: hidden;
+    cursor: var(--cursor);
+    z-index: 99999999;
+}
+
+header section .left_bx .item_bx .card_pepsi img {
+    width: 50px;
+    transform: .3s linear;
+}
+
+header section .left_bx .item_bx .card_pepsi h6 {
+    width: 100%;
+    text-align: center;
+    color: #2c6cbb;
+}
+
+header section .left_bx .item_bx .card_pepsi:hover h6 {
+    color: #fff;
+}
+
+header section .right_bx img {
+    width: 430px;
+    margin: 20px 0 0 -100px;
+}
+
+header section .right_bx .right_btn_bx {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header section .right_bx .right_btn_bx span {
+    font-size: 8px;
+    font-weight: 600;
+    color: rgb(255,255,255,.5);
+    margin-right: 7px;
+}
+
+header section .right_bx .right_btn_bx .bi {
+    font-size: 11px;
+    cursor: var(--cursor);
+    transition: .3s linear;
+}
+
+header section .right_bx .right_btn_bx .bi:hover {
+    color: #2d71c0;
+}
+
+header section .right_bx .level {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 30px;
+    height: 35%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section .right_bx .level h6 {
+    width: 8px;
+    height: 1px;
+    background: rgb(255,255,255,.5);
+    margin-top: 13px;
+}
+
+header section .right_bx .level h6:nth-child(3) {
+    width: 18px;
+    background: #fff;
+}
+
+header .ml_bx {
+    position: absolute;
+    width: 110px;
+    height: 150px;
+    background: rgb(44,138,245);
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px 0 0 20px;
+}
+
+header .ml_bx p {
+    font-size: 9px;
+}
+
+header .ml_bx h6 {
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+header .ml_bx h5 {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #196bd0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and ( max-width: 1390px ) {
+    header section .right_bx img {
+        margin: 20px 0 0 -170px;
+    }
+}
+
+@media screen and ( max-width: 1246px ) {
+    header {
+        width: 90%;
+        transition: 1s linear;
+    }
+
+    header section .right_bx img {
+        margin: 20px 0 0 -150px;
+    }
+}
+
+@media screen and ( max-width: 840px ) {
+    header {
+        width: 95%;
+    }
+
+    header section .left_bx {
+        padding: 40px 0 0 20px;
+    }
+}
+
+@media screen and ( max-width: 780px ) {
+    header {
+        width: 100%;
+        height: 100%;
+    }
+
+    header section {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    header section .left_bx , .right_bx {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header section .right_bx {
+        width: 100%;
+        height: 35%;
+    }
+
+    header section .right_bx img {
+        width: 300px;
+    }
+
+    header section .right_bx .right_btn_bx {
+        top: 45%;
+    }
+
+    header section .left_bx .content button {
+        margin-top: 20px;
+    }
+
+    header section .left_bx .item_bx {
+        margin-top: 0;
+    }
+
+    header section .left_bx #left_btn {
+        top: -37%;
+    }
+}
+
+@media screen and ( max-width: 673px ) {
+    header nav ul {
+        position: absolute;
+        top: 5px;
+        right: 30px;
+    }
+
+    header .ml_bx {
+        width: 80px;
+        padding: 10px 0 0 5px;
+    }
+
+    header section .left_bx .content .nutritation_bx .card {
+        width: 80px;
+    }
+
+    header section .left_bx .item_bx .card_pepsi {
+        margin-right: 10px;
+    }
+}
